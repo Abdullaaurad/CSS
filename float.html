@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating Elements Example</title>
+<style>
+  .float-left {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px; /* Adds space between floated elements */
+  }
+  .align-left{
+    text-align:  left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .content {
+    overflow: auto; /* Clears the float */
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+    <div class="float-left" style="width: 200px; height: 200px; background-color: red;"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui sed tortor efficitur porta. Integer fringilla eros ut risus mollis, id varius justo sollicitudin. Donec auctor sagittis lacus vel condimentum.</p>
+  </div>
+  <br><br><br><br>
+  <div class="content">
+    <div class="align-left" style="width: 200px; height: 200px; background-color: red;"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui sed tortor efficitur porta. Integer fringilla eros ut risus mollis, id varius justo sollicitudin. Donec auctor sagittis lacus vel condimentum.</p>
+  </div>
+</body>
+</html>

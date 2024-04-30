@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>first-letter Demo</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: green;
+            font-size: large;
+            text-align: left;
+        }
+        
+        p::first-letter {
+            color: Red;
+            font-size: 60px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        /*! Doesn't work 
+        p::first-letter:active {
+            color: blueviolet;
+        }
+        */
+        p:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Geeks For Geeks</h1>
+    <h2>::first-letter element</h2>
+    <p>
+        This is a paragraph using first-letter
+        pseudo-element to style first letter
+        of the paragraph. first-letter element
+        turned the first letter of this paragraph
+        to red and made it bold.
+    </p>
+
+</body>
+
+</html>

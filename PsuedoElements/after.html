@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>after Demo</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: darkmagenta;
+            font-size: large;
+            text-align: center;
+        }
+        p::before{
+            content: '"';
+            color: red;
+            font-size: 30px;
+        }
+        p::after {
+            content: '"';
+            color: red;
+            font-size: 30px;
+        }
+        h2::after {
+            content: '';
+            background-image: url('k.jpg');
+            float:inline-start;
+            background-size: cover;
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>::after element</h2> 
+    
+    <br><br>
+    <p>
+        This is a paragraph to which
+        we added red color quotation
+        marks using ::after element.
+    </p>
+
+</body>
+
+</html>

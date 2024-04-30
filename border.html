@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p.dotted {
+            border: 3px dotted red;
+            display:inline-block ;
+        }
+        p.dashed {
+            border-style: dashed;
+            border-width: 4px;
+        }
+
+        p.solid {
+            border-style: solid;
+            border-radius: 20px;
+            text-align: center;
+            display:inline-block ;
+        }
+
+        p.double {
+            border-style: double;
+            text-align: right;
+        }
+        .how{
+            display: flex; /* Use Flexbox for alignment */
+            justify-content: center; /* Horizontally center items */
+            align-items: center; /* Vertically center items */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The border-style Property</h2>
+
+    <p>Geeksforgeeks</p>
+
+
+    <p class="dotted">A dotted border.</p>
+
+    <p class="dashed">A dashed border.</p>
+    <div class="how">
+        <p class="solid">A solid border.</p>
+    </div>
+    
+    <p class="double">A double border.</p>
+
+</body>
+
+</html>

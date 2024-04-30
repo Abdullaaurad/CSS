@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>clicked dropdown</title>
+    <style type="text/css">
+        button {
+            background: #009900;
+            width: 200px;
+            height: 60px;
+            color: white;
+            border: 1px solid #fff;
+            font-size: 20px;
+            border-radius: 5px;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            display: block;
+            background: #c99;
+            width: 200px;
+            height: 50px;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+
+        ul li a:hover {
+            background: #009900;
+        }
+
+        .open {
+            display: none;
+        }
+
+        .gfg {
+            font-size: 40px;
+            font-weight: bold;
+            color: #009900;
+            Text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function open_menu() {
+            let clicked = document.getElementById('drop-menu');
+            if (clicked.style.display == 'block') {
+                clicked.style.display = 'none';
+            }
+            else {
+                clicked.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Clicked Dropdown content property</p>
+    <div id="dropdown">
+        <button onclick="open_menu()">Click Me!</button>
+        <div class="open" id="drop-menu">
+            <ul>
+                <li><a href="">Item-1</a></li>
+                <li><a href="">Item-2</a></li>
+                <li><a href="">Item-3</a></li>
+                <li><a href="">Item-4</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

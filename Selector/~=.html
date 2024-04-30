@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Attribute selector</title>
+    <style>
+        [class~="gfg"] {
+            color: green;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        [class~="geeks"] {
+            font-size: 17px;
+            text-align: right;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gfg">GeeksforGeeks</div>
+    <div class=" geeks ">A computer science portal for geeks
+    </div>
+    <div class="geeks ide">
+        GeeksforGeeks is coding platform
+    </div>
+    <!-- Doesn't consider the spaces and only sees if it the class has the strong inside it or not-->
+</body>
+  
+</html>

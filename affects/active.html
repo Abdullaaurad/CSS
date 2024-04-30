@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>CSS transition-property property</title>
+    <style>
+        .box {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+            position: relative; /* Add position relative for z-index to work */
+            z-index: 0; /* Initial z-index */
+        }
+
+        .box:active {
+            background-image: url("k.jpg");
+            z-index: 2; /* Higher z-index to bring the image to the front */
+        }
+
+        .box p {
+            position: absolute;
+            z-index: 1; /* Text stays behind the image */
+            display: block; /* Show the text by default */
+        }
+
+        .box:active p {
+            display: none; /* Hide the text when box is active */
+        }
+
+        h1, h2 {
+            color: green;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Geeks For Geeks</h1>
+    <h2>:active Pseudo-class</h2>
+    <div class="box">
+        <p>My color changes for a moment if you click me!</p>
+    </div>
+</body>
+  
+</html>                    

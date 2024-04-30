@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS counter property</title>
+    <style>
+        body {
+            counter-reset: myCounter;
+        }
+
+        h4::before {
+            counter-increment: myCounter;
+            content: "Heading " counter(myCounter) ": ";
+        }
+
+        .geeks {
+            color: #090;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .gfg {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="geeks">GeeksforGeeks</div>
+    <div class="gfg">CSS counter property</div>
+    <h3>Example of automatic numbering with CSS counters</h3>
+    <h4>GeekforGeeks</h4>
+    <h4>Computer Science portal</h4>
+    <h4>Geeks</h4>
+</body>
+
+</html>
